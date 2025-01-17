@@ -14,7 +14,7 @@ This is a simple To-Do List application built using React. It allows users to ad
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/aditya-bhange/To-Do-List-React.git
+git clone https://github.com/Adibhange/To-Do-React-App.git
 ```
 
 2. Install dependencies:
