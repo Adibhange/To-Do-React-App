@@ -21,7 +21,7 @@ const ToDoList = ({ todos, addTodo, editTodo, deleteTodo, toggleComplete }) => {
 					value={inputValue}
 					onChange={(e) => setInputValue(e.target.value)}
 					placeholder='Add new task...'
-					className='flex-grow p-2 border rounded-lg focus:outline-blue-500'
+					className='grow p-2 border rounded-lg focus:outline-blue-500'
 				/>
 				<button
 					type='submit'

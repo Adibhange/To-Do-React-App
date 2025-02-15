@@ -18,11 +18,11 @@ const ToDoItem = ({ todo, editTodo, deleteTodo, toggleComplete }) => {
 						type='text'
 						value={editText}
 						onChange={(e) => setEditText(e.target.value)}
-						className='flex-grow p-1 border rounded-lg focus:outline-none'
+						className='grow p-1 border rounded-lg focus:outline-hidden'
 					/>
 				) : (
 					<span
-						className={`flex-grow cursor-pointer ${
+						className={`grow cursor-pointer ${
 							todo.completed ? "line-through text-gray-500" : ""
 						}`}
 						onClick={() => toggleComplete(todo.id)}>
@@ -34,19 +34,19 @@ const ToDoItem = ({ todo, editTodo, deleteTodo, toggleComplete }) => {
 					{isEditing ? (
 						<button
 							onClick={handleEdit}
-							className='bg-green-500 text-white px-2 py-1 rounded'>
+							className='bg-green-500 text-white px-2 py-1 rounded-sm'>
 							Save
 						</button>
 					) : (
 						<button
 							onClick={() => setIsEditing(true)}
-							className='bg-yellow-500 text-white px-2 py-1 rounded'>
+							className='bg-yellow-500 text-white px-2 py-1 rounded-sm'>
 							Edit
 						</button>
 					)}
 					<button
 						onClick={() => deleteTodo(todo.id)}
-						className='bg-red-500 text-white px-2 py-1 rounded'>
+						className='bg-red-500 text-white px-2 py-1 rounded-sm'>
 						<FaTrash />
 					</button>
 				</div>
